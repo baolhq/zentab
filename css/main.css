@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+section {
+  height: 100vh;
+  border-bottom: 1px solid var(--surface);
+}

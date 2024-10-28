@@ -1,0 +1,16 @@
+#option {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  opacity: 0.5;
+  color: var(--subtext);
+}
+
+#option:hover {
+  color: var(--text);
+}

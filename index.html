@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zen Tab</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/option.css" />
+  </head>
+  <body>
+    <button id="option" title="Options">
+      <i class="fa-solid fa-ellipsis-vertical"></i>
+    </button>
+    <section class="home">
+      <div class="time">
+        <span class="hour">09</span>
+        <span class="minute">:25</span>
+        <span class="second">:50</span>
+      </div>
+      <div class="date">
+        <span>Fri, Oct 27th, 2024</span>
+      </div>
+      <div class="search-box">
+        <div class="leading">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <input
+          type="text"
+          tabindex="1"
+          autocomplete="false"
+          class="search-input"
+          placeholder="Press / to jump here"
+        />
+        <div class="trailing">
+          <div class="clear-box">
+            <i class="fa-solid fa-x" id="clear-btn" title="Clear"></i>
+            <hr />
+          </div>
+          <i
+            class="fa-solid fa-microphone"
+            id="voice-input"
+            title="Voice input"
+          ></i>
+          <i
+            class="fa-solid fa-camera"
+            id="image-search"
+            title="Image search"
+          ></i>
+        </div>
+        <div class="expanded">
+          <ul class="history">
+            <li class="item">
+              <i class="fa-solid fa-clock icon"></i>
+              <span class="text">translate</span>
+              <button class="action">Delete</button>
+            </li>
+            <li class="item">
+              <i class="fa-solid fa-clock icon"></i>
+              <span class="text">translate</span>
+              <button class="action">Delete</button>
+            </li>
+            <li class="item">
+              <i class="fa-solid fa-clock icon"></i>
+              <span class="text">translate</span>
+              <button class="action">Delete</button>
+            </li>
+            <li class="item">
+              <i class="fa-solid fa-clock icon"></i>
+              <span class="text">translate</span>
+              <button class="action">Delete</button>
+            </li>
+            <li class="item">
+              <i class="fa-solid fa-clock icon"></i>
+              <span class="text">translate</span>
+              <button class="action">Delete</button>
+            </li>
+          </ul>
+
+          <div class="actions-container">
+            <button class="trends">Trending</button>
+            <button class="doodle">Doodle</button>
+          </div>
+        </div>
+      </div>
+      <div class="quotes">
+        <p id="quote"></p>
+        <a href="#" id="author"></a>
+      </div>
+    </section>
+    <section class="settings"></section>
+  </body>
+  <script src="./js/main.js"></script>
+  <script src="./js/utils.js"></script>
+  <script src="./js/shortcut.js"></script>
+</html>
