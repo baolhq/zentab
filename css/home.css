@@ -14,12 +14,12 @@
   margin-bottom: -1.5rem;
 }
 
-.home .time .second {
+.time .second-group {
   display: none;
 }
 
-.home .time .second.show {
-  display: block;
+.time .second-group.show {
+  display: flex;
 }
 
 .home .date {
@@ -178,19 +178,22 @@
   justify-content: center;
 }
 
-.actions-container button {
+.actions-container a {
   border: 1px solid var(--surface);
   margin: 0.5rem;
   padding: 0.5rem 1rem;
   outline: none;
   background: none;
   text-align: center;
-  border-radius: 2rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  color: var(--subtext);
+  cursor: pointer;
 }
 
-.actions-container button:hover {
-  cursor: pointer;
+.actions-container a:hover {
   border: 1px solid var(--violet);
+  color: var(--text);
 }
 
 .quotes {

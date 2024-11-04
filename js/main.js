@@ -15,11 +15,11 @@ searchBox.addEventListener("focusout", () => {
   expandedPanel.classList.remove("show");
 });
 
-searchBoxInput.addEventListener("keyup", (event) => handleInputChange(event));
+searchBoxInput.addEventListener("keyup", (event) => handleInput(event));
 
 clearBtn.addEventListener("click", () => {
   searchBoxInput.value = "";
-  handleInputChange();
+  handleInput();
   searchBoxInput.focus();
 });
 
@@ -37,5 +37,6 @@ historyItem.forEach((el) => {
 
 document.addEventListener("DOMContentLoaded", () => {
   updateDateTime();
+  setInterval(updateDateTime, 1000);
   fetchQuote();
 });
