@@ -102,7 +102,7 @@ const getRandomInt = (min, max) => {
 };
 
 const fetchLocalQuotes = async () => {
-  const quotesPath = "/asset/quotes.json";
+  const quotesPath = "asset/quotes.json";
   const result = await fetch(quotesPath);
   const data = await result.json();
 
